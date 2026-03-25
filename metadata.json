@@ -1,0 +1,5 @@
+{
+  "name": "sock.os",
+  "description": "A collection of unblocked web games accessible via iframes.",
+  "requestFramePermissions": []
+}
