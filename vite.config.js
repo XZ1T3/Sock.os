@@ -102,3 +102,17 @@ export default defineConfig({
     emptyOutDir: true,
   }
 });
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  // Use a single slash for root domains
+  base: '/', 
+  plugins: [react(), tailwindcss()],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+  }
+});
