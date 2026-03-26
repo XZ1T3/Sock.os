@@ -46,18 +46,27 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-  // This dot-slash is the secret to making GitHub Pages find your files
-  base: './', 
-  plugins: [react(), tailwindcss()],
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    // This ensures the build doesn't fail if it finds small issues
-    emptyOutDir: true,
-  }
-});
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sock.os</title>
+    <link rel="icon" type="image/jpeg" href="https://i.pinimg.com/736x/2f/23/8a/2f238a01ab772cbe9995d79cb27f07d5.jpg" />
+  </head>
+  <body style="margin: 0; background: #000;">
+    <div id="root">
+      <div style="font-family: monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; color: #0f0;">
+        <p style="letter-spacing: 4px;">&gt; SOCK.OS BOOTING...</p>
+        <div style="width: 150px; height: 1px; background: #111; position: relative; overflow: hidden; margin-top: 10px;">
+          <div style="width: 100%; height: 100%; background: #0f0; position: absolute; animation: scan 1.5s infinite ease-in-out;"></div>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes scan { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+    </style>
+    <!-- VITE ENTRY POINT -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
